@@ -25,6 +25,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="app">
+  <meta name="google-signin-client_id" content="1234567890-abc123def456.apps.googleusercontent.com">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
@@ -36,10 +37,12 @@
   <script type="application/javascript" src="/assets/packages/flutter_inappwebview_web/assets/web/web_support.js"
     defer></script>
   <!-- ... -->
+  <!-- cropperjs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
   <script type="text/javascript">
     window.flutterWebRenderer = "html";
   </script>
-
   <style>
     .custom-loading {
       width: 100vw;
@@ -70,7 +73,7 @@
         if (loadingIndicator) {
           loadingIndicator.remove();
         }
-      }, 1000);
+      }, 5000);
     };
   </script>
 </body>
